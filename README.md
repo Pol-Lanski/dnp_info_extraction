@@ -3,8 +3,10 @@ Script to get index, name, status and position of packages in the dappnode dapps
 
 ## Start the project
 1. Initiate your virtual environment. I use `venv` 
+
 `virtualenv venv`
 2. Install requirements
+
 `pip3 install -r requirements.txt`
 
 ## Configure endpoint:
