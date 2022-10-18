@@ -28,6 +28,7 @@ max_packages = contract.functions.numberOfDAppNodePackages().call()
 
 # iterate over the list and print
 for package_num in range(max_packages):
-    print(package_num, contract.functions.getPackage(package_num).call())
+    package = contract.functions.getPackage(package_num).call()
+    print(f"{package_num}: {package[0]}, Status: {package[1]}, Location: {package[2]}")
 
 # TODO: DUMP INTO LIST INTO .TXT
